@@ -1,0 +1,25 @@
+{
+    "name": "vlad1slawq/oop",
+    "description": "oop",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vlad1slawq",
+            "email": "Desmond1894@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.0"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "core/Src/",
+            "": "app/"
+        }
+    }
+
+
+}
