@@ -24,7 +24,6 @@ class Site
     }
     public function signup(Request $request): string
     {
-
         if ($request->method === 'POST') {
 
             $validator = new Validator($request->all(), [
@@ -43,11 +42,12 @@ class Site
 
             if (User::create($request->all())) {
                 app()->route->redirect('/login');
+                return false;
             }
         }
         return new View('site.signup');
-
     }
+
     public function login(Request $request): string
     {
         //Если просто обращение к странице, то отобразить форму
